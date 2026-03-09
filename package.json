@@ -1,0 +1,46 @@
+{
+  "name": "generative-recipe-creator",
+  "version": "1.0.0",
+  "description": "AI-based web application for generating original recipes with ingredient constraints",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "dev-win": "start \"Server\" cmd /k \"npm run server\" && start \"Client\" cmd /k \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "test": "jest",
+    "seed": "node database/seed.js"
+  },
+  "keywords": [
+    "ai",
+    "recipe",
+    "cognitive",
+    "constraints",
+    "generator"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.13.2",
+    "bcryptjs": "^2.4.3",
+    "compromise": "^14.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.10.0",
+    "helmet": "^7.0.0",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "natural": "^6.5.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "jest": "^29.6.2",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  }
+}

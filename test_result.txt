@@ -1,0 +1,5 @@
+Testing Gemini API (REST Mode)...
+Key present
+Engine instantiated
+✅ Success! Generated Recipe: Quick Thai Basil Chicken (Pad Krapow Gai)
+Description: A rapid, intensely flavored version of the classic Thai street food, Pad Krapow Gai. This dish relies on high heat and quick cooking to deliver savory, spicy, and fragrant results, served over fluffy jasmine rice.
